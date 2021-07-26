@@ -72,3 +72,30 @@ function calcularPerimetroTria(){
     alert (perimetro);
 
 }
+
+function calcularAreaTria(){
+    const base = document.getElementById("InputBase");
+        const Bvalue = base.value; 
+    const altura = document.getElementById("InputAltura");
+        const altValue = altura.value;
+    
+    const area = areaTriangulo(Bvalue, altValue);
+    alert(area);
+}
+
+
+// Circulo
+
+function calcularPerimetroCir(){
+    const radio = document.getElementById("InputCirculo");
+        const value = radio.value; 
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCir(){
+    const radio = document.getElementById("InputCirculo");
+        const value = radio.value; 
+    const area = areaCirculo(value);
+    alert(area);
+}
