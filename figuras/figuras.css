@@ -22,11 +22,13 @@ header{
 }
 .container > section{
     width: 400px;
-    height: 400px;
+    height: 600px;
     border: 2px solid white;
     border-radius: 20px;
     padding: 10px;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.4);
 }
 .container h2{
     text-align: center;
@@ -59,3 +61,48 @@ header{
        cursor: pointer;
        
    }
+.cuadrado{
+    width: 100px; 
+    height: 100px; 
+    border: 3px solid #FFF;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.titulo_cua{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+.circulo{
+    width: 100px;
+     height: 100px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     border: 3px solid white;
+     margin-right: 5%;
+    margin-top: 5%;
+}
+.titulo_cir{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+.tria__container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+ }
+    
+.titulo_tria{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}

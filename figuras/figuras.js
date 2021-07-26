@@ -1,62 +1,74 @@
-// código de consola para el cuadrado
-console.group("Cuadrado");
+// Código del cuadrado
 
-function perimetroCua(lado){
-        return lado*4;
-} 
-function areaCua(lado){
-    return lado**2;
+function perimetroCuadrado(lado) {
+  return lado * 4;
 }
-console.groupEnd();
-// Fin Cuadrados
-
-
-// Código de consola para el triángulo
-
-console.group("Triángulo");
-
-function perimetroT(lado1, lado2, base){
-    return lado1 + lado2 + base;
+function areaCuadrado(lado) {
+  return lado * lado;
 }
 
-function areaT(altura, base){
-    return (base*altura)*2;
+
+// Código del triángulo
+
+function perimetroTriangulo(lado1, lado2, base) {
+  return lado1 + lado2 + base;
+}
+function areaTriangulo(base, altura) {
+  return (base * altura) / 2;
 }
 
-console.groupEnd();
 
-// Fin Triángulo
+// Código del círculo
 
-// Código de consola para círculos
-
-console.group("Círculos");
-
-//  Diametro
-
-function diametro(radio){
-    return radio*2;
+// Radio
+// Diámetro
+function diametroCirculo(radio) {
+  return radio * 2;
 }
+// PI
+const PI = Math.PI;
+console.log("PI es: " + PI);
 // Circunferencia
-function circunferencia(radio){
-    const diametro = diametro(radio);
-    return diametro * Math.PI;
+function perimetroCirculo(radio) {
+  const diametro = diametroCirculo(radio);
+  return diametro * PI;
+}
+// Área
+function areaCirculo(radio) {
+  return (radio * radio) * PI;
 }
 
-function areaCir(radio){
-    return (radio**2) * Math.PI;
+
+
+// interactuamos con el HTML
+function calcularPerimetroCuadrado() {
+  const input = document.getElementById("InputCuadrado");
+  const value = input.value;
+
+  const perimetro = perimetroCuadrado(value);
+  alert(perimetro);
+}
+function calcularAreaCuadrado() {
+  const input = document.getElementById("InputCuadrado");
+  const value = input.value;
+
+  const area = areaCuadrado(value);
+  alert(area);
 }
 
-console.groupEnd();
+// Triangulo
 
-//Fin Círculos
+function calcularPerimetroTria(){
+    const lado1 = document.getElementById("InputLado1");
+        const l1value = lado1.value;
+    const lado2 = document.getElementById("InputLado2");
+        const l2value = lado2.value;
+    const base = document.getElementById("InputBase");
+        const Bvalue = base.value; 
+    const altura = document.getElementById("InputAltura");
+        const altValue = altura.value;
 
-// Interacción con HTML
-function calcular_perimetrocua(){
-    const input = document.getElementById("input_cua");
-    const value = input.value;
-    const perimetro = perimetroCua(value);
-    console.log("activado");
-}
-function calcular__areacua(){
-    
+    const perimetro = perimetroTriangulo(l1value, l2value, Bvalue);
+    alert (perimetro);
+
 }

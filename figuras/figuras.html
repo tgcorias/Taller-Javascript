@@ -1,78 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./figuras.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="figuras.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>Figuras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Figuras geométricas </title>   
 </head>
 <body>
-        <header>
-            <h1>Figuras geométricas</h1>
-        </header>
+  <header>
+    <h1>
+      Figuras geométricas
+    </h1>
+   
+  </header>
+<section class="container">
+
+    <section>
+        <div class="titulo_cua">
+            <div class="cuadrado"></div>
+            <h2>Cuadrado</h2>
+        </div>
         
-        <section class="container">
+        <form>
+          <label for="InputCuadrado">
+            Ingresar valor de los lados
+          </label>
+          <input id="InputCuadrado" type="number" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+        </form>
+      </section>
 
-            <section class="container__cua">
-                <div class="container__cua--titulo">
-                    <h2>Calcular área y perímetro cuadrado</h2>
-                </div>
-                <div class="containter__cua--form">
-                    <form action="">
-                        <label for="input-cua">
-                            Ingresar medida de lados:
-                        </label>
-                        <input type="number" id="input_cua">
-                        <button type="button" onclick="calcular_perimetrocua">
-                            Perímetro
-                        </button>
-                        <button type="button" onclick="calcular__areacua">
-                            Área
-                        </button>
-                    </form> 
-                </div> 
-            </section>
 
-            <section class="container__tria">
-                <h2>Calcular área y perímetro cuadrado</h2>
-                    <form action="">
-                        <label for="input-cua">
-                            Ingresar medida de lados:
-                        </label>
-                        <input type="number" id="input_tria">
-                        <button type="button" onclick="calcular_perimetrocua">
-                            Perímetro
-                        </button>
-                        <button type="button" onclick="calcular__areacua">
-                            Área
-                        </button>
-                    </form>    
-                </section>
-
-                <section class="container__cir">
-                <h2>Calcular área y perímetro cuadrado</h2>
-                <section>
-                    <form action="">
-                        <label for="input-cua">
-                            Ingresar medida de lados:
-                        </label>
-                        <input type="number" id="input_cir">
-                        <button type="button" onclick="calcular_perimetrocua">
-                            Perímetro
-                        </button>
-                        <button type="button" onclick="calcular__areacua">
-                            Área
-                        </button>
-                    </form>    
-                </section>
-            </section>
+      <section>
+      
+        <div class="titulo_tria">
+            <div class="tria__container">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDY5LjMzMyA0NjkuMzMzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjkuMzMzIDQ2OS4zMzM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBkPSJNNDY4LjIwOCw0NTMuODhsLTIyNC00NDguNDUzYy0zLjYyNS03LjIzNi0xNS40NTgtNy4yMzYtMTkuMDgzLDBsLTIyNCw0NDguNDUzYy0xLjY0NiwzLjMwNS0xLjQ3OSw3LjIzNywwLjQ1OCwxMC4zODUNCgkJCWMxLjk1OCwzLjE0OSw1LjM5Niw1LjA2OCw5LjA4Myw1LjA2OGg0NDhjMy42ODgsMCw3LjEyNS0xLjkxOSw5LjA4My01LjA2OEM0NjkuNjg4LDQ2MS4xMTcsNDY5Ljg1NCw0NTcuMTg2LDQ2OC4yMDgsNDUzLjg4eg0KCQkJIE0yNy45MTcsNDQ4bDIwNi43NS00MTMuNDc5TDQ0MS40MTcsNDQ4SDI3LjkxN3oiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+            </div>
             
-        </section>
+            <h2>Triángulo</h2>
+        </div>
 
-        <script src="figuras.js"></script>
+        <form>
+          <label for="InputLado1">
+            Ingresar valor del lado 1:
+          </label>
+          <input id="InputLado1" type="number" />
+
+          <label for="InputLado2">
+            Ingresar valor del lado 1:
+          </label>
+          <input id="InputLado2" type="number" />
+
+          <label for="InputBase">
+            Ingresar valor de la base:
+          </label>
+          <input id="InputBase" type="number" />
+
+          <label for="InputAltura">
+            Ingresar valor de la altura:
+          </label>
+          <input id="InputAltura" type="number" />
+
+          <button type="button" onclick="calcularPerimetroTria()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+        </form>
+      </section>
+
+
+
+      <section>
+        <div class="titulo_cir">
+            <div class="circulo"></div>
+            <h2>Circulo</h2>
+        </div>
+        <form>
+          <label for="InputCirculo">
+            Ingresar radio del círculo
+          </label>
+          <input id="InputCirculo" type="number" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el perímetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el área
+          </button>
+        </form>
+      </section>
+
+
+</section>
+  
+
+  <script src="./figuras.js"></script>
 </body>
 </html>
