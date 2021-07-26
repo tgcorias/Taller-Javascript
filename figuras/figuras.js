@@ -49,3 +49,14 @@ function areaCir(radio){
 console.groupEnd();
 
 //Fin Círculos
+
+// Interacción con HTML
+function calcular_perimetrocua(){
+    const input = document.getElementById("inputcua");
+    const value = input.value;
+    const perimetro = perimetroCua(value);
+    alert(perimetro);
+}
+function calcular__areacua(){
+    
+}

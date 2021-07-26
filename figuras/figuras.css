@@ -1,0 +1,40 @@
+body{
+    background-color:#3d3d3d;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    height: 15vh;
+    background-color: #5a5a5a;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+ 
+}
+.container{
+    margin: 2% 5% 2% 5%;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.container > section{
+    width: 300px;
+    height: 400px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+.container h2{
+    text-align: center;
+}
+.container input{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 80%;
+    height: 30px;
+    margin: 5%  10% 5% 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: large;
+}

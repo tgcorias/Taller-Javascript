@@ -4,11 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./figuras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Figuras</title>
 </head>
 <body>
-        <h1>Calcular figuras geométricas</h1>
-    
+        <header>
+            <h1>Figuras geométricas</h1>
+        </header>
+        
+        <section class="container">
+
+            <section class="container__cua">
+                <h2>Calcular área y perímetro cuadrado</h2>
+                <form action="">
+                    <label for="input-cua">
+                        Ingresar medida de lados:
+                    </label>
+                    <input type="number" id="inputcua">
+                    <button type="button" onclick="calcular_perimetrocua">
+                        Perímetro
+                    </button>
+                    <button type="button" onclick="calcular__areacua">
+                        Área
+                    </button>
+                </form>    
+            </section>
+
+            <section class="container__tria">
+                <h2>Calcular área y perímetro cuadrado</h2>
+                    <form action="">
+                        <label for="input-cua">
+                            Ingresar medida de lados:
+                        </label>
+                        <input type="number" id="inputcua">
+                        <button type="button" onclick="calcular_perimetrocua">
+                            Perímetro
+                        </button>
+                        <button type="button" onclick="calcular__areacua">
+                            Área
+                        </button>
+                    </form>    
+                </section>
+
+                <section class="container__cir">
+                <h2>Calcular área y perímetro cuadrado</h2>
+                <section>
+                    <form action="">
+                        <label for="input-cua">
+                            Ingresar medida de lados:
+                        </label>
+                        <input type="number" id="inputcua">
+                        <button type="button" onclick="calcular_perimetrocua">
+                            Perímetro
+                        </button>
+                        <button type="button" onclick="calcular__areacua">
+                            Área
+                        </button>
+                    </form>    
+                </section>
+            </section>
+            
+        </section>
+
         <script src="figuras.js"></script>
 </body>
 </html>
