@@ -4,5 +4,15 @@ function calcularDto(precio, dto){
     return precioConDescuento;
 }
 
+function onClickDto(){
+    const precio = document.getElementById("InputPrice");
+        const pValue = precio.value;
+    const dto = document.getElementById("InputDto");
+        const dtoValue = dto.value;
 
- 
+    const descuento = calcularDto(pValue, dtoValue);
+    
+    const pid = document.getElementById("RP");
+   pid.innerText = "Tu precio con descuento es: $" + descuento;
+    
+}

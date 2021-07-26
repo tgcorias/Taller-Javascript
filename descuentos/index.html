@@ -18,24 +18,26 @@
 
     <section class="container">
 
-        <h2>Calcular precio a pagar con descuento</h2>
+        <h2 >Calcular precio a pagar con descuento</h2>
         <form action="">
 
-                <label for="">
+                <label for="InputPrice">
                         Ingresar precio
                 </label>
-                <input type="text">
+                <input id="InputPrice" type="number">
                 
-                <label for="">
+                <label for="InputDto">
                         Ingresar descuento
                 </label>
-                <input type="text">
+                <input id="InputDto" type="number">
 
-                <button>
+                <button type="button" onclick="onClickDto()">
                         Calcular descuento
                 </button>
-                
+                <p id="RP"></p>
         </form>
+
+        
 
     </section>
 
