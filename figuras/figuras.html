@@ -18,19 +18,23 @@
         <section class="container">
 
             <section class="container__cua">
-                <h2>Calcular área y perímetro cuadrado</h2>
-                <form action="">
-                    <label for="input-cua">
-                        Ingresar medida de lados:
-                    </label>
-                    <input type="number" id="inputcua">
-                    <button type="button" onclick="calcular_perimetrocua">
-                        Perímetro
-                    </button>
-                    <button type="button" onclick="calcular__areacua">
-                        Área
-                    </button>
-                </form>    
+                <div class="container__cua--titulo">
+                    <h2>Calcular área y perímetro cuadrado</h2>
+                </div>
+                <div class="containter__cua--form">
+                    <form action="">
+                        <label for="input-cua">
+                            Ingresar medida de lados:
+                        </label>
+                        <input type="number" id="input_cua">
+                        <button type="button" onclick="calcular_perimetrocua">
+                            Perímetro
+                        </button>
+                        <button type="button" onclick="calcular__areacua">
+                            Área
+                        </button>
+                    </form> 
+                </div> 
             </section>
 
             <section class="container__tria">
@@ -39,7 +43,7 @@
                         <label for="input-cua">
                             Ingresar medida de lados:
                         </label>
-                        <input type="number" id="inputcua">
+                        <input type="number" id="input_tria">
                         <button type="button" onclick="calcular_perimetrocua">
                             Perímetro
                         </button>
@@ -56,7 +60,7 @@
                         <label for="input-cua">
                             Ingresar medida de lados:
                         </label>
-                        <input type="number" id="inputcua">
+                        <input type="number" id="input_cir">
                         <button type="button" onclick="calcular_perimetrocua">
                             Perímetro
                         </button>

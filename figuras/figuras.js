@@ -52,10 +52,10 @@ console.groupEnd();
 
 // Interacción con HTML
 function calcular_perimetrocua(){
-    const input = document.getElementById("inputcua");
+    const input = document.getElementById("input_cua");
     const value = input.value;
     const perimetro = perimetroCua(value);
-    alert(perimetro);
+    console.log("activado");
 }
 function calcular__areacua(){
     
