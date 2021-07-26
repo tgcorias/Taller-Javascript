@@ -1,24 +1,12 @@
 // código de consola para el cuadrado
 console.group("Cuadrado");
 
-const ladoCuadrado = 5;
-console.log(
-    "Los lados del cuadrado miden " 
-    + ladoCuadrado + "cm"
-);
-
-const perimetroCuadrado = ladoCuadrado*4;
-console.log(
-    "Perímetro " 
-    + perimetroCuadrado + "cm"
-);
-
-const areaCuadrado = ladoCuadrado**2;
-console.log(
-    "Área " 
-    + areaCuadrado+ "cm2"
-);
-
+function perimetroCua(lado){
+        return lado*4;
+} 
+function areaCua(lado){
+    return lado**2;
+}
 console.groupEnd();
 // Fin Cuadrados
 
@@ -26,30 +14,14 @@ console.groupEnd();
 // Código de consola para el triángulo
 
 console.group("Triángulo");
-const lado1= 6;
-const lado2= 6;
-const base= 4;
-const altura= 5.5;
 
-console.log(
-"Los lados del cuadrado miden: " 
-+ lado1 + "cm, " 
-+ lado2 + "cm, " 
-+ base + "cm de base y "
-+ altura + "cm de altura."
-);
+function perimetroT(lado1, lado2, base){
+    return lado1 + lado2 + base;
+}
 
-const perimetroT = lado1 + lado2 + base;
-console.log(
-"Perímetro del triángulo: " 
-+ perimetroT
-);
-
-const areaT = (base*altura)*2;
-console.log(
-"Área del triángulo: " 
-+ areaT
-);
+function areaT(altura, base){
+    return (base*altura)*2;
+}
 
 console.groupEnd();
 
@@ -59,29 +31,20 @@ console.groupEnd();
 
 console.group("Círculos");
 
-// Radio 
-const radio = 4;
-// Diametro
-const diametro = radio*2;
-// Pi
-const Pi = Math.PI;
+//  Diametro
+
+function diametro(radio){
+    return radio*2;
+}
 // Circunferencia
-const Circunferencia = diametro*2;
-// Área
-const areaCir = (radio**2) * Pi; 
-//Logs
-console.log(
-    "El radio del cículo es " + radio + "cm"
-);
-console.log(
-    "El diámetro del cículo es " + diametro + "cm"
-);
-console.log(
-    "Circunferencia " + Circunferencia
-);
-console.log(
-    "Área " + areaCir
-);
+function circunferencia(radio){
+    const diametro = diametro(radio);
+    return diametro * Math.PI;
+}
+
+function areaCir(radio){
+    return (radio**2) * Math.PI;
+}
 
 console.groupEnd();
 
