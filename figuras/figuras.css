@@ -4,6 +4,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
 }
 header{
+    width: 100vw;
     height: 15vh;
     background-color: #5a5a5a;
     display: flex;
