@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../descuentos/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Promedios</title>
+</head>
+<body>
+    
+    <section class="container">
+      
+        <h1>Ingresar valores a calcular, separados por una coma</h1>
+        <form>
+          <label for="InputValores">
+            Ingresar:
+          </label>
+          <input id="InputValores" type="number" />
+
+          <button type="button" onclick="onClickPromedio()">
+            Calcular el promedio
+          </button>
+        
+          <h3 id="Promedio"></h3>
+        </form>
+      </section>
+
+    <script src="promedio.js"></script>
+</body>
+</html>
