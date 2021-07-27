@@ -8,7 +8,7 @@ function calcularProm(lista){
      return promedio;
     }
 
-lista = [
+var lista = [
     100,
     200,
     300,
@@ -16,8 +16,8 @@ lista = [
     100000,
     200000
 ];
-
-const mitadLista = parseInt(lista.length / 2);
+const listaOrdenada = lista.sort(function(a,b){return a -b});
+const mitadLista = parseInt(listaOrdenada.length / 2);
 
 function parImpar(numero){
     if (numero % 2 === 0) {
@@ -28,14 +28,14 @@ function parImpar(numero){
 }
 let mediana;
 
-if (parImpar(lista.length)) {
+if (parImpar(listaOrdenada.length)) {
     
-    const elemento1 = lista[mitadLista];
-    const elemento2 = lista[mitadLista - 1];
+    const elemento1 = listaOrdenada[mitadLista];
+    const elemento2 = listaOrdenada[mitadLista - 1];
 
     const promedio1y2 = calcularProm([elemento1, elemento2]);
 
     mediana = promedio1y2;
 } else{
-    mediana = lista[mitadLista];
+    mediana = listaOrdenada[mitadLista];
 }
